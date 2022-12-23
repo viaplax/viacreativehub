@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+}
+
+.header_bar {
+    background-color: lightgray;
+    padding: 2vh 0 2vh 0;
+    border: 2px solid darkslategray;
+    font-family: 'VT323', monospace;
+    text-align: center;
+    font-size: 2em;
+}
+
+.writing_space {
+    background-color: #FADADD;
+    padding: 2vh 0 94vh 2vw;
+}
+
+.grid_container {
+    display: grid;
+    align-items: flex-start;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 8vw;
+}
+
+.sidepic {
+    max-width: 65%;
+}
+
+@media (max-width:629px) {
+    .sidepic {
+        display: none;
+    }
+
+    .grid_container {
+        display: block;
+    }
+}
